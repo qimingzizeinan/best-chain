@@ -1,0 +1,40 @@
+{
+  "name": "@best-chain/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "dev": "rollup -c --environment NODE_ENV:development -w"
+  },
+  "bin": {
+    "bci": "bin/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@best-chain/utils": "workspace:^1.0.0",
+    "cac": "^6.7.14",
+    "compressing": "^1.7.0",
+    "dotenv": "^16.0.3",
+    "execa": "^7.0.0",
+    "minimist": "^1.2.8",
+    "node-ssh": "^13.0.0",
+    "ora": "^6.1.2",
+    "semver": "^7.3.8",
+    "user-home": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/semver": "^7.3.13",
+    "@types/user-home": "^2.0.0",
+    "vite": "^4.1.2",
+    "vitest": "^0.28.5"
+  }
+}

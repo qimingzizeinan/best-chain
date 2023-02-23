@@ -1,0 +1,11 @@
+import type { SyncOptions } from 'execa';
+export type CocosDeployType = 'base' | 'b' | 'hot' | 'h' | 'push' | 'p' | 'match' | 'm' | 'platform';
+export declare function step(msg: string): void;
+export declare function errorStep(msg: string): void;
+export declare function info(msg: string): void;
+export declare function cmd(cmd: string, options?: SyncOptions<string> | undefined): Promise<import("execa").ExecaReturnBase<string>>;
+export declare function assetsCompressAndDeploy(): Promise<void>;
+export declare function fastlaneMatchForce_match(): Promise<void>;
+export declare function baseBag(): Promise<void>;
+export declare function hotUpdateBag(): Promise<void>;
+export declare function cocosDeploy(type: CocosDeployType): Promise<void>;
