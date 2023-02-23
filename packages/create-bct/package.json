@@ -1,0 +1,28 @@
+{
+  "name": "create-bct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-bct": "./index.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "dev": "rollup -c --environment NODE_ENV:development -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@best-chain/utils": "workspace:^1.0.0",
+    "minimist": "^1.2.7",
+    "vite": "^4.1.2",
+    "vitest": "^0.28.5",
+    "execa": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2"
+  }
+}
